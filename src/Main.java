@@ -14,22 +14,22 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        //picking out x # of questions for the quiz
-        //change constant to a variable later
-        int numOfQs = (int)(new Random() *qs.size++);
-        System.out.println(numOfQs);
-
-        Scanner myObj = new Scanner(System.in);
-        System.out.println("Select Answer");
-        String question = myObj.nextLine();
-
         //array for questions
-        String[] qs = {"What year is it?", "Why did the chicken cross the road", "What colour is the lavender shirt",
+        String[] questions = {"What year is it?", "Why did the chicken cross the road", "What colour is the lavender shirt",
                 "How many mice does it take to screw a light bulb", "What is the worst letter in the alphabet?"
         };
 
+        //picking out x # of questions for the quiz
+        //change constant to a variable later
+        int numOfQs = (int)(Math.random() * questions.length);
+        System.out.println(numOfQs);
+
+        /*Scanner myObj = new Scanner(System.in);
+        System.out.println("Select Answer");
+        String question = myObj.nextLine();*/
+
         //array for answers
-        String[] as1 = {"2022"};
+        /*String[] as1 = {"2022"};*/
 
 
         //idek atp

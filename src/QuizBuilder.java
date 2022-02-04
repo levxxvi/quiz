@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-public class QuizBuilder {
+/*public class QuizBuilder {
     public static ArrayList<Question> questions = new ArrayList<Question>();
     private ArrayList<Question> quiz;
 
@@ -12,5 +12,5 @@ public class QuizBuilder {
     private void generateRandomQuestionList(){
 
     }
-}
+}*/
 
