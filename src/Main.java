@@ -15,14 +15,27 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         //array for questions
-        String[] questions = {"What year is it?", "Why did the chicken cross the road", "What colour is the lavender shirt",
-                "How many mice does it take to screw a light bulb", "What is the worst letter in the alphabet?"
+        String[] questions = {"What year is it?",
+                "Why did the chicken cross the road?",
+                "What colour is the lavender shirt?",
+                "How many mice does it take to screw a light bulb?",
+                "What is the worst letter in the alphabet?"
+        };
+
+        String[] answers = {"2022",
+                "To go to the idiot's house... Knock Knock.",
+                
         };
 
         //picking out x # of questions for the quiz
-        //change constant to a variable later
         int numOfQs = (int)(Math.random() * questions.length);
-        System.out.println(numOfQs);
+        System.out.println("There are " + questions.length + " questions in the question bank.");
+        System.out.println("You will be quizzed " + numOfQs + " questions.");
+
+        for (int i = 0; i < numOfQs; i++){
+            int newQ = (int)(Math.random() * questions.length);
+            System.out.println(questions[newQ]);
+        }
 
         /*Scanner myObj = new Scanner(System.in);
         System.out.println("Select Answer");
