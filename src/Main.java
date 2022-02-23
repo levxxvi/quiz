@@ -14,6 +14,8 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+        Scanner myObj = new Scanner(System.in);
+
         //array for questions
         String[] questions = {"What year is it?",
                 "Why did the chicken cross the road?",
@@ -24,7 +26,7 @@ public class Main {
 
         String[] answers = {"2022",
                 "To go to the idiot's house... Knock Knock.",
-                
+
         };
 
         //picking out x # of questions for the quiz
@@ -35,6 +37,11 @@ public class Main {
         for (int i = 0; i < numOfQs; i++){
             int newQ = (int)(Math.random() * questions.length);
             System.out.println(questions[newQ]);
+            String userAnswer;
+            userAnswer = myObj.nextLine();
+            if(userAnswer == answers[newQ]){
+                System.out.println("WOW! I was NOT expecting you to get that right!");
+            }
         }
 
         /*Scanner myObj = new Scanner(System.in);
