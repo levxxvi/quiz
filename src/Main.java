@@ -47,7 +47,8 @@ public class Main {
     private static void runQuiz(ArrayList<Question> quiz) {
         for (Question q : quiz) {
             System.out.println(q.question);
-            
+            //user answer + compare answers + correct/wrong
+            String userAnswer = myObj.nextLine();
             System.out.println(q.answer);
         }
     }
